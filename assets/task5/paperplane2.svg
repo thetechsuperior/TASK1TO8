@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="transparent"></rect>
+<g transform="matrix(Infinity NaN NaN Infinity 0 0)" id="3e6194a6-5049-4326-92a2-275fe1df36dc"  >
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="b6d8bcf1-ad30-41c6-a152-7cd0f9979ccd"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(10.8 0 0 10.8 489.47 884.13)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-42.86, -77.16)" d="M 50.114 73.814 L 36.254999999999995 65.89399999999999 C 35.641999999999996 65.541 35.144 65.83099999999999 35.144 66.53899999999999 L 35.144 84.34299999999999 L 35.141999999999996 84.34299999999999 C 35.141999999999996 89.03899999999999 37.642999999999994 89.96499999999999 40.699999999999996 86.40099999999998 L 50.345 75.15299999999998 C 50.73 74.706 50.625 74.105 50.114 73.814 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(10.8 0 0 10.8 540 540)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-50, -46.93)" d="M 90.438 11.753 L 8.555 39.047 C 4.098999999999999 40.532999999999994 3.79 43.653 7.867 45.985 L 29.681 58.45 C 30.193 58.741 30.999000000000002 58.704 31.482 58.366 L 74.846 28.036 C 77.262 26.348000000000003 77.456 26.589000000000002 75.28 28.578000000000003 L 38.57 62.125 C 38.048 62.604 38.123 63.273 38.737 63.624 L 70.533 81.793 C 73.081 83.25 75.82600000000001 82.13300000000001 76.632 79.311 L 94.753 15.888000000000005 C 95.721 12.5 93.777 10.64 90.438 11.753 z" stroke-linecap="round" />
+</g>
+</svg>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Header</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #root {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            background-color: #a9a9a9;
+        }
+
+        .content {
+            font-size: 123%;
+            flex: 1;
+        }
+
+        .grid-container {
+            display: flex;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .item1 {
+            text-align: center;
+            font-family: 'Merriweather';
+            font-weight: 900;
+            grid-area: span;
+            padding: 1%;
+            font-size: 125%;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        .menu button {
+            background-color: rgb(46, 46, 46);
+            border: none;
+            color: white;
+            padding: 4px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .menu {
+            padding-left: 10%;
+            padding-right: 10%;
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(239, 135, 249);
+            padding: 0.5cm;
+        }
+
+        .mainBody {
+            grid-column: 5/6;
+            background-color: whitesmoke;
+            padding: 2%;
+        }
+
+        .sidebar {
+            grid-column: 1/6;
+            justify-content: right;
+            padding-right: 4%;
+            background-color: rgb(239, 135, 249);
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .foot {
+            background-color: whitesmoke;
+            padding: 2.3%;
+            text-align: center;
+        }
+
+        .item2 {
+            text-align: center;
+            font-family: 'Merriweather';
+            font-weight: 900;
+            padding: 2%;
+            font-size: 250%;
+        }
+
+        .item3 {
+            font-family: 'Merriweather';
+            font-weight: 900;
+            font-size: 250%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="content">
+            <div class="menu">
+                <a>HOME</a>
+                <a>OUR TEAM</a>
+                <a>PROJECTS</a>
+                <a>CONTACT</a>
+                <div class="justify-content:right;">
+                    <input type="text" placeholder="Search..">
+                    <button type="button">GO</button>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="mainBody">
+                    <i>
+                        <div class="item2">Article heading</div>
+                    </i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Done a diam lectus. Set sit amet ipsum
+                    mauris.
+                    Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Done et mollis dolor. Present
+                    et diam
+                    eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
+                    consectetur.
+                    <i><b>
+                            <div class="item3">Subsection</div>
+                        </b></i>
+                    <p>
+                        Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                        dolor.
+                    </p>
+                    <p>Pelientesque auctor nisi id magna consequat sagitis. Curabitur dapibus, enim sit amet elit
+                        pharetra
+                        tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio
+                        eros.
+                    </p>
+                    <i>
+                        <div class="item3">Another subsection</div>
+                    </i>
+                    <p>Done viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et
+                        manis dis
+                        parturient montes, nascetur ridiculus mus.
+                        In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+                    <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio.
+                        Maecenas
+                        convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagitis, nisi diam
+                        iaculis
+                        velit, is fringille sem nunc vet mi.</p>
+                </div>
+
+                <div class="sidebar">
+                    <i>
+                        <div class="item2">related </div>
+                    </i><br><br>
+                    <ul style="list-style-type:circle solid">
+                        <li><a href="">Oh I do like to be beside the seaside</a><br><br></li>
+                        <li><a href="">Oh I do like to be beside the sea</a><br><br></li>
+                        <li><a href="">Although in the North of England</a><br><br></li>
+                        <li><a href="">It never stops raining</a><br><br></li>
+                        <li><a href="">Oh well...</a><br><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                © Copyright 2050 by nobody. All rights reversed.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

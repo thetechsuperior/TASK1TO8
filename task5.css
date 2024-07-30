@@ -1,0 +1,507 @@
+main {
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: 100px;
+    animation-range-end: 500px;
+}
+
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+main div {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit 100px;
+}
+
+main img {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit 100px;
+}
+
+#major9 {
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit 600px;
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0.2;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+    white-space: nowrap;
+    scroll-snap-type: y mandatory;
+}
+
+#major1 {
+    scroll-snap-align: start;
+    scroll-margin-top: 200px;
+}
+
+#major2 {
+    scroll-snap-align: center;
+    scroll-margin: 150px;
+}
+
+#major3 {
+    scroll-snap-align: start;
+    scroll-margin-bottom: 100px;
+    scroll-margin-top: 100px;
+}
+
+#major4 {
+    scroll-snap-align: center;
+}
+
+#major5 {
+    scroll-snap-align: center;
+    scroll-margin-block: 100px;
+}
+
+#major6 {
+    scroll-snap-align: center;
+    scroll-margin-block: 100px;
+}
+
+#major7 {
+    scroll-snap-align: center;
+}
+
+#major8 {
+    scroll-snap-align: center;
+    /* scroll-margin: 100px; */
+    scroll-margin-block: 100px;
+}
+
+#major9 {
+    scroll-snap-align: center;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+appbar {
+    display: flex;
+    background-color: rgb(225, 176, 47);
+    justify-content: space-between;
+    padding: 2%;
+    color: white;
+}
+
+appbar img {
+    margin-left: 6%;
+    width: 250px;
+    height: 65px;
+}
+
+appbar form.example {
+    margin-right: 6%;
+    display: flex;
+    height: 100%;
+    margin-top: 0.5%;
+    box-shadow: 10px 10px 25px rgba(128, 127, 66, 0.25);
+}
+
+form.example button {
+    background-color: rgb(0, 187, 200);
+    float: left;
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+
+.size-6 {
+    height: 100%;
+    color: rgb(255, 254, 254);
+    justify-content: center;
+}
+
+form.example input[type=text] {
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    float: left;
+    width: 80%;
+    background-color: rgb(255, 200, 55);
+}
+
+appbar div {
+    margin-top: 1%;
+    font-size: 140%;
+}
+
+main.first {
+    background-color: rgb(255, 199, 55);
+    padding-left: 6%;
+    padding-left: 6%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    display: flex;
+    color: white;
+}
+
+main.first img {
+    margin-left: 13%;
+}
+
+main #onebutton {
+    margin-top: 5%;
+    background-color: rgb(0, 187, 200);
+    color: white;
+    padding: 3%;
+    border: 2px solid rgb(255, 199, 55);
+    font-size: 120%;
+    border-radius: 5px;
+}
+
+main #twobutton {
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: rgb(255, 199, 55);
+    border: 2px solid white;
+    padding: 2.6%;
+    font-size: 120%;
+    color: white;
+    border-radius: 5px;
+}
+
+main.second {
+    padding-left: 6%;
+    padding-left: 6%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    display: flex;
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+main.second img {
+    margin-left: 8%;
+}
+
+main #threebutton {
+    margin-top: 5%;
+    background-color: rgb(255, 199, 55);
+    color: white;
+    padding: 4%;
+    border: 2px solid rgb(255, 199, 55);
+    font-size: 130%;
+    border-radius: 5px;
+}
+
+main.third {
+    background-color: rgb(255, 199, 55);
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    color: white;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+main.third div div img {
+    height: 350px;
+    width: 330;
+    border: 3px solid white;
+}
+
+.common {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common div {
+    text-align: center;
+}
+
+.common div b {
+    font-size: 230%;
+}
+
+.common div p {
+    font-size: 150%;
+}
+
+/* no.5 */
+main.third div div button {
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(0, 187, 200);
+    border: none;
+    font-size: 130%;
+}
+
+/* no.6 */
+
+main.sixth {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.svgcontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.svgcontainer svg {
+    background-color: rgb(255, 199, 55);
+    fill: white;
+    height: 25px;
+    width: 25px;
+    padding: 7px;
+    border-radius: 25px;
+}
+
+t {
+    font-size: 140%;
+}
+
+main.seventh {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-image: url(./assets/task5/Shape3.png);
+}
+
+whitetext {
+    color: white;
+    font-size: 210%;
+}
+
+main.seventh div div {
+    padding: 5%;
+    text-align: center;
+}
+
+.eightcommon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eightcommon div div #title {
+    font-size: 150%;
+}
+
+date {
+    font-size: 110%;
+    color: rgb(36, 187, 200);
+}
+
+datee {
+    font-size: 130%;
+    text-shadow: 1px 1px 1px rgba(128, 127, 66, 0.25);
+    color: rgb(0, 187, 200);
+}
+
+.eightcommon div div p {
+    color: rgb(150, 141, 141);
+    font-size: 110%;
+}
+
+.task {
+    border: 2px solid rgb(211, 204, 204);
+    border-top: none;
+    padding: 10%;
+}
+
+
+.task:hover {
+    opacity: 1;
+    box-shadow: 10px 10px 25px rgba(128, 127, 66, 0.25);
+    /* Your desired shadow */
+    padding: 10%;
+    transition: box-shadow 0.28s ease-in-out;
+    /* Adjust animation duration and timing */
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    margin-top: 4%;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-size: 140%;
+    display: flex;
+}
+
+footer div b {
+    font-size: 180%;
+}
+
+footer div {
+    margin: 5%;
+    width: 25%;
+}
+
+.lastro {
+    text-align: end;
+    margin-right: 0;
+    width: 50%;
+    margin: 5%;
+    margin-right: 0;
+}
+
+.lastro b {
+    font-size: 180%;
+}
+
+footer form {
+    display: flex;
+    height: 70px;
+    margin-top: 0.5%;
+    box-shadow: 10px 10px 25px rgba(128, 127, 66, 0.25);
+}
+
+footer form button {
+    background-color: rgb(0, 187, 200);
+    float: left;
+    width: 20%;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+}
+
+.size {
+    height: 100px;
+    color: rgb(255, 254, 254);
+    justify-content: center;
+}
+
+footer form input[type=text] {
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    float: left;
+    width: 80%;
+    background-color: rgb(255, 200, 55);
+}
+
+.anothersvgcontainer {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin-left: 40%;
+}
+
+.one {
+    font-size: 400%;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+
+.two {
+    font-size: 180%;
+}
+
+.three {
+    font-size: 350%;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+
+.four {
+    text-align: center;
+    padding: 5%;
+}
+
+.five {
+    font-size: 500%;
+}
+
+.six {
+    font-size: 260%;
+}
+
+.seven {
+    margin-right: 8%;
+    margin-left: 0;
+}
+
+.eight {
+    font-size: 180%;
+    color: rgb(71, 75, 78);
+}
+
+.nine {
+    justify-content: space-between;
+    display: flex;
+}
+
+.ten {
+    font-size: 420%;
+    color: rgb(68, 71, 73);
+}
+
+.ten-two {
+    font-size: 420%;
+}
+
+.eleven {
+    font-size: 220%;
+    color: rgb(102, 106, 110);
+}
+
+.seven-two {
+    margin-right: 0%;
+    margin-left: 8%;
+}
+
+.twelve {
+    font-size: 420%;
+    color: rgb(68, 71, 73);
+}
+
+#haha {
+    margin-right: 8%;
+    margin-left: 0;
+}
+
+.appbar div {
+    font-weight: 550;
+}

@@ -1,0 +1,147 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 4rem; */
+  /* text-align: center; */
+}
+/* Classes */
+
+.hero { 
+  margin-top: 18px;
+}
+.active {
+  border-bottom: 3px solid #fdc11f;
+  padding-top: 15px;
+}
+
+.containerStandard {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.menu, .menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu ul li {
+  margin-right: 50px;
+}
+
+.searchButton img, .logo img{
+  max-width: 40%;
+}
+.searchButton img{
+  /* border-radius: 25px; */
+  /* background-size: 100px 100px; */
+  /* background-size: 100vw 100vh; */
+  /* background-color: #fdc11f; */
+}
+.hero{
+  display: flex;
+}
+
+.largerH1 {
+  font-size: 4.2em;
+  font-weight: bold;
+}
+
+.subText {
+  font-weight: 500;
+}
+
+.ImageArea img {
+  max-width: 720px;
+}
+
+.threeImages {
+  position: absolute;
+  /* z-index: -1; */
+  /* top: 320px; */
+}
+
+.yellowText { 
+  color: #fdc11f;
+}
+
+/* Hero Grid Layout */
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+gap: 0px 0px;
+grid-template-columns: repeat(12);
+grid-auto-flow: row;
+grid-template-areas:
+
+  "TextArea ImageArea";
+}
+
+.TextArea { grid-area: TextArea; grid-column: span 3}
+
+.ImageArea { grid-area: ImageArea; grid-column: span 5;}
+
+/* Mobile Responsive */
+@media (max-width: 767px){
+
+  .containerStandard {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  margin: auto;
+}
+
+.ImageArea img {
+  max-width: 325px;
+}
+
+.iconsBack {
+  top: 177px;
+}
+
+.TextArea {
+  margin: auto;
+  width: 100%;
+  margin-left: 20px;
+}
+
+h1, .largerH1 {
+  font-size: 2.3em;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-position-x: 210px;
+
+}
+
+header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchButton {
+  display: none;
+}
+
+}

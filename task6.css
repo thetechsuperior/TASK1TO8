@@ -1,0 +1,125 @@
+body {
+    background-image: url("./assets/task6/Pattern\ \(1\).svg");
+    background-size: 100vw 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    margin-right: 0;
+    background-size: contain;
+    font-weight: 560;
+}
+
+#img1{
+    position: absolute;
+    z-index: -2;
+    height: 109%;
+}
+ul li{
+   color: rgb(4, 105, 55); font-size: 250%;
+}
+t{
+    color: rgb(4, 105, 55);
+}
+button svg{
+    padding: 10px;
+    background-color: rgb(6, 64, 68);
+    height: 25px;
+    border-radius: 25px;
+}
+#img2{
+    position: absolute;
+    height: 67px;
+    z-index: -2;
+    padding: 10px;
+    padding-left: 0%;
+}
+
+#bottomright{
+    position: absolute;
+    width: auto;
+    height: 428px;
+    z-index:-2;
+    align-items: right;
+    left: 35.5%;
+    margin-right: 0%;
+    bottom:-86%;
+}
+
+#imgdiscount{
+    position: absolute;
+    height: 400px;
+    z-index: -2;
+}
+
+#one {
+    position: absolute;
+    clip-path: polygon(45% 0, 93% 40%, 45% 80%, -7px 40%);
+    background-color: red; /* Your desired background color or content */
+    left: 54%;
+    height: 80%;
+    bottom: 10%;
+}
+#two {
+    position: absolute;
+    clip-path: polygon(47.5% -3.3%, 84% 48%, 47.8% 98%, 11% 48%);
+    background-color: red; /* Your desired background color or content */
+    left: 42.5%;
+    height: 80%;
+    bottom: -29%;
+    z-index: -1;
+}
+#two{
+    position: absolute;
+}
+#one-bg{
+    position: absolute;
+    height: 80%;
+    left: 49%;
+    bottom: 15%;
+}
+#two-bg{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    right: 0%;
+    bottom: -40%;
+}
+
+.cleaning-services{
+    display: flex;color: white;padding:4%;padding-right: 0%;
+}
+.cleaning-services div{
+    display: flex; flex-direction: column;font-size: 150%;justify-content: center;margin-left: 1%;
+}
+
+.reliable-cleaning{
+    padding: 4%;padding-top: 0;padding-right: 0%;
+}
+.reliable-cleaning-white{
+    font-size: 700%;color: white;
+}
+.reliable-cleaning-green{
+    font-size: 700%;color: rgb(123, 198, 85);
+}
+.reliable-cleaning-text{
+    font-size: 200%;color: white;
+}
+.list-parent{
+    display: flex;padding: 4%;padding-right: 0%;
+}
+.list-discount{display: flex;}
+.discount{font-size: 400%; position: absolute; left: 48.1%; font-weight: bolder;margin-top: 8%; text-align: center;}
+footer{
+    display: flex;padding: 4%; padding-bottom: 0;padding-right: 0%; justify-content: space-between;
+}
+.callnow{
+    font-size: 150%;padding: 5px;color: white;
+}
+.callnumber{
+    color: rgb(25,41,40); font-size: 200%;font-weight: bolder;
+}
+.yourwebsite{
+    color: rgb(25,41,40); font-size: 200%;
+}
+.last-text{
+    margin-top: 5%; text-align: center;padding-right: 8%;font-size: 180%;color: white;
+}

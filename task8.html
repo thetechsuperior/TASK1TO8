@@ -1,0 +1,115 @@
+<html>
+
+<HEAD>
+    <link rel="stylesheet" href="task8.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</HEAD>
+<body>
+    <h1>The Everything Form</h1>
+    <div class="normal-sticky">
+        <label class="normal-label" for="fuel">My Remaining Wait-Time with you:</label>
+
+        <meter class="sticky-meter" id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="80">at
+            80/100</meter>
+    </div>
+    <form method="post">
+        <div class="normal">
+            <label class="normal-label" for="name">Name (4 to 8 characters):</label>
+            <input class="normal-input" type="text" id="name" name="name" required minlength="4" maxlength="8"
+                size="10" autocapitalize="words"/>
+        </div>
+        <div class="normal">
+            <label class="normal-label" for="email">Enter your email:</label>
+            <input class="normal-input" type="email" id="email" pattern=".+@example\.com" size="30" required />
+        </div>
+        <div class="normal">
+            <label class="normal-label" for="username">Username:</label>
+            <input class="normal-input" type="text" id="username" name="username" />
+        </div>
+        <div class="normal">
+            <label class="normal-label" for="pass">Password (8 characters minimum):</label>
+            <input class="normal-input" type="password" id="pass" name="password" minlength="8" required />
+        </div>
+        <div class="normal">
+            <label class="file-label" for="avatar">Choose an image file (here)</label>
+        </div>
+        <div class="normal">
+            <label class="normal-label" for="bday-month">What month were you born in?</label>
+            <input class="normal-input" id="bday-month" type="month" name="bday-month" />
+        </div>
+        <div class="normal">
+            <label class="normal-label" for="flavor-choice">Choose a flavor:(datalist)</label>
+            <input class="normal-input" list="flavors" id="flavor-choice" name="flavor-choice" />
+
+            <datalist id="flavors">
+                <option value="Chocolate"></option>
+                <option value="ButterScotch"></option>
+                <option value="Coconut"></option>
+                <option value="Mint"></option>
+                <option value="Strawberry"></option>
+                <option value="Vanilla"></option>
+            </datalist>
+        </div>
+        <div class="normal">
+            <label class="normal-label" for="movie-select">Choose a Movie:(optgroup)</label>
+            <select class="normal-select" id="movie-select">
+                <optgroup>
+                    <option></option>
+                </optgroup>
+                <optgroup label="Your Choices">
+                    <option>The Boy and the Heron</option>
+                    <option>The GodFather</option>
+                    <option>The Dark Knight</option>
+                </optgroup>
+                <optgroup label="What is a Movie?">
+                    <option>Amitab Bachhan</option>
+                    <option>Rick-Roll</option>
+                    <option>Planet of the Apes</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="normal">
+            <label class="normal-label" for="story">Give us your Introduction:</label>
+
+            <textarea class="normal-input" id="story" name="story" rows="5"
+                cols="33" autocapitalize="words">It was a dark and stromy night...</textarea>
+        </div>
+
+        <div class="normal">
+            <label class="normal-label" for="body">Choose Your color:</label>
+            <input class="color-input" type="color" id="body" name="body" value="#f6b73c" />
+        </div>
+        
+        <div class="normal">
+            <label class="normal-label" for="volume">Your Patience Level:</label>
+            <input class="normal-input" type="range" id="volume" name="volume" min="0" max="11" />
+          </div>
+        <div class="normal">
+            <label class="normal-label" for="phone">
+                Enter your Available number:<br />
+                <small>Format: 1234567890</small>
+              </label>
+              <input class="normal-input" type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+        </div>
+
+
+
+        <fieldset>
+            <legend>Is the above information correct?</legend>
+            <label><input type="radio" name="radio" value="yes" /> Yes</label>
+            <label><input type="radio" name="radio" value="no" /> No</label>
+
+            <label class="alpha-1"><input type="checkbox" /> Is This a Checkbox? (a Reasoning
+                Question)</label>
+        </fieldset>
+
+        <input class="button" type="submit" value="Send" />
+
+    </form>
+
+
+    <input class="file-input" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+</body>
+</html>

@@ -1,0 +1,500 @@
+:root {
+    --purple: rgb(120, 91, 130);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --small-txt: 1.35rem;
+    --normal-txt: 2rem;
+}
+
+body {
+    margin: 0%;
+    color: var(--purple);
+    font-size: var(--small-txt);
+}
+
+main {
+    height: 110vh;
+    box-sizing: border-box;
+}
+
+.major-1 {
+    background-image: url("./assets/task9/major1-bgimg.png");
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-weight: 550;
+    height: 10%;
+    align-items: center;
+    box-shadow: 1px 5px 15px rgba(118, 115, 115, 0.2);
+    height: 10vh;
+    padding-right: 3rem;
+}
+
+nav img {
+    padding: 1%;
+    position: relative;
+    padding-left: 4rem;
+
+}
+
+#header-txt {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    padding-top: 2%;
+}
+
+#header-txt #hidden-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #header-txt {
+        flex-direction: column;
+    }
+
+    #header-txt button {
+        display: none;
+    }
+
+    #header-txt #hidden-button {
+        display: block;
+    }
+}
+
+#header-txt button {
+    padding: 10px 15px;
+    /* Add padding inside buttons for better spacing */
+    border: none;
+    /* Remove default border */
+    background: none;
+    /* Remove default background */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    font-size: 1.4rem;
+    /* Adjust font size */
+    color: var(--purple);
+}
+
+/* Optional: Add hover effect */
+#header-txt button:hover {
+    background-color: #f0f0f0;
+    /* Change background color on hover */
+    border-radius: 5px;
+    /* Optional: Add rounded corners */
+}
+
+#header-txt>* {
+    padding: 2%;
+}
+
+#random-1 {
+    background-color: var(--purple);
+    height: 15px;
+    display: flex;
+}
+
+.major-1-hero {
+    display: flex;
+    position: relative;
+}
+
+.major-1-hero img {
+    min-width: 52.5%;
+    max-width: 90%;
+    position: absolute;
+    z-index: -0.1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: none;
+    max-height: 80vh;
+}
+
+.major-1-hero-txt {
+    position: absolute;
+    padding-top: 13%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.major-1-hero-txt :first-child {
+    font-size: clamp(0.4rem, 2.5vw, 2rem);
+    font-weight: 300;
+}
+
+.major-1-hero-txt :nth-child(2) {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    font-weight: 600;
+}
+
+.major-1-hero-txt :nth-child(3) {
+    font-size: clamp(0.1rem, 2.5vw, 1.5rem);
+    font-weight: 590;
+}
+
+
+
+.major-2 {
+    position: relative;
+    height: auto;
+    top: 0%;
+}
+
+#major-2-bgimg {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.ellipsis-vertical {
+    height: 2.2rem;
+    fill: var(--purple);
+}
+
+#oneofthree-images {
+    border-radius: 9.375rem;
+    height: 18.75rem;
+    width: 18.75rem;
+}
+
+.major-2-oneofthree {
+    padding: 3.4%;
+}
+
+.major-2-oneofthree hr {
+    border: 1px solid var(--purple);
+}
+
+.oneofthree-txt{
+    padding: 3%;
+}
+.oneofthree-txt :nth-child(2) {
+    font-size: 2rem;
+    font-weight: 599;
+}
+
+.oneofthree-txt :nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: 50;
+}
+
+.major-2-items {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    overflow-x: scroll
+}
+#showmore-parent{display: flex; justify-content: center;}
+.major-2-head{line-height: 80%; text-align: center;padding-top: 1rem; letter-spacing: 3px;}
+.major-2-head :first-child{font-size: clamp(1rem, 2.5vw, 2rem);font-weight: lighter;}
+.major-2-head :nth-child(2){font-size:clamp(1rem, 2.5vw, 2rem); font-weight: 600;}
+@media (max-width: 768px) {
+    .major-2-items{
+        flex-direction: column;
+    }
+    .major-2-oneofthree{
+        display: flex;
+    }
+    .oneofthree-txt img{
+        display: none;
+    }
+    .major-2-head{
+        display: flex;
+        margin-left: 25%;
+    }
+}
+
+#showmore {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-bottom: 2%;
+    border-radius: 25rem;
+    border: none;
+    background-color: var(--purple);
+    color: white;
+    box-shadow: 0px 0px 15px rgba(140, 135, 135, 0.8);
+}
+
+
+.major-3 {
+    position: relative;
+    background-image: url("./assets/task9/major3-bgimg.png");
+    background-position: center;
+    background-size: cover;
+    top: 0%;
+    height: 130vh;
+    color: white;
+}
+
+.major-3 img {
+    padding: 3%;
+    min-width: 30vw;
+    max-width: 40vw;
+}
+#major-3-txt-div{
+    line-height: 50%; text-align: left;padding-top: 1rem; letter-spacing: 0.3rem;margin-left: 10%;
+}
+#major-3-txt-div :first-child{
+    font-size: 3rem; font-weight: 599;
+}
+#major-3-txt-div :nth-child(2){
+    font-size: 2rem;font-weight: lighter;
+}
+#major-3-txt-div :nth-child(3){
+    font-size: 1.3rem;font-weight: 599;
+}
+#major-3-txt-div :nth-child(4){
+    font-size: 1.3rem;font-weight: 599;
+}
+
+
+
+.major-4 {
+    position: relative;
+    height: 115vh;
+}
+
+.major-4-bgimg {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+
+#major-4-mainarea {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+#major-4-imgarea {
+    position: relative;
+    width: 50%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#major-4-last-p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    position: absolute;
+    right: 4rem;
+    font-size: 1.3rem;
+}
+
+#major-4-1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#major-4-2 {
+    position: absolute;
+    border-radius: 500px;
+    width: 600;
+    z-index: -2;
+    top: 5rem;
+    right: 3rem;
+}
+
+#major-4-txt {
+    width: 50%;
+    margin-left: 5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: .17rem;
+}
+
+#major-4-txt-title-1 {
+    margin-top: 7rem;
+
+    line-height: 0rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#major-4-txt-title-2 {
+    line-height: 0rem;
+    font-size: 3.1rem;
+    font-weight: lighter;
+}
+
+.major-4-5-txt-pointer {
+    margin-top: 5rem;
+    font-size: 2rem;
+}
+
+#major-4-txt hr {
+    border: 1px solid var(--purple);
+    width: 80%;
+}
+
+.random-2 {
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+
+.major-5 {
+    position: relative;
+    height: 115vh;
+}
+
+#major-5-bgimg {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 50vw;
+    z-index: -3;
+}
+
+#major-5-last-p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    position: absolute;
+    left: 4rem;
+    font-size: 1.3rem;
+}
+
+#major-5-2 {
+    position: absolute;
+    border-radius: 500px;
+    width: 600;
+    z-index: -2;
+    top: 5rem;
+    right: 3rem;
+}
+
+
+
+.major-6 {
+    position: relative;
+    height: 60vh;
+    margin: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#major-6-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    line-height: 0;
+}
+
+#major-6-title hr {
+    line-height: 0;
+    flex: 1;
+    /* Make the HR elements flexible */
+    border: 1px solid var(--purple);
+    margin: 0 0.5rem;
+}
+
+#major-6-main {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 1.1rem;
+}
+
+#major-6-main div :nth-child(2) {
+    font-weight: 599;
+    font-size: 1.5rem;
+}
+
+.major-7 {
+    position: relative;
+    height: auto;
+    top: 0%;
+    margin: 5%;
+}
+
+.major-8 {
+    position: relative;
+    height: 70vh;
+    top: 0%;
+    display: flex;
+}
+
+#major-8-img {
+    position: absolute;
+}
+
+.major-9 {
+    position: relative;
+    top: 0%;
+    height: 90vh;
+}
+
+#major-9-vertical-p {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    font-size: clamp(1rem, 2rem, 2.5rem);
+    margin-right: 8%;
+}
+
+
+#major-9-bgimg {
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+}
+
+#major-9-mark {
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    margin: auto;
+    height: 2%;
+}
+
+footeri {
+    display: flex;
+    margin: 10%;
+    font-size: 1.3rem;
+}
+
+#footer-left :first-child {
+    font-weight: 600;
+}
+
+#footer-right {
+    margin-top: 2rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+#footer-right div :first-child {
+    font-weight: 600;
+}
+#random-2 {
+    background-color: var(--purple);
+    height: 2rem;
+    display: flex;
+}
